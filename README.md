@@ -11,17 +11,26 @@ Install done. Have Fun !!
 
 # Controls
 ArrowLeft-Key (rewind the music)
+
 ArrowRight-Key (forward the music)
+
 Screenshot
 
 # Features
 Option to switch songs
+
 Changing the welcoming text in every joining
+
 Changing the header text  in every joining
+
 Clickable URL icons
+
 Easy customization
+
 Deatailed  config
+
 Easy Youtube link video or image
+
 
 # İmage
 
