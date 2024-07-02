@@ -1,0 +1,1212 @@
+// tüm çözünürlüklere uyumlu çalışması için
+
+@media (min-width:1024px) {
+    //Header
+
+    .header {
+        height: 9%;
+
+        svg {
+            height: 90%;
+        }
+
+        h1,
+        p {
+            font-size: $fontsize;
+        }
+    }
+
+    // Welcome
+    .card {
+        height: 45%;
+        width: 30%;
+
+        .card-image {
+            width: 98%;
+            height: auto;
+
+
+        }
+
+
+        .card-content {
+
+            width: $welcome-card-content-min-width-responsive;
+        }
+
+        .card-title {
+
+
+
+
+
+            font-size: $fontsize06-responsive;
+
+
+
+
+
+        }
+
+        .card-description {
+
+            font-size: $fontsize06-responsive;
+            line-height: 0.8rem;
+
+
+
+
+        }
+    }
+
+    // Gallery
+    .gallery-content {
+
+        width: $gallery-min-width-responsive;
+        height: $gallery-min-height-responsive;
+
+
+        .gallery-top {
+
+            svg {
+
+                width: 1.2rem;
+                height: auto;
+
+
+            }
+
+            h3 {
+
+
+                font-size: $fontsize08-responsive;
+
+
+
+
+            }
+
+            p {
+
+
+
+                font-size: 0.4rem;
+
+
+
+
+
+            }
+        }
+
+        .slides img {
+            width: 110%;
+            padding-left: 2%;
+            padding-right: 3%;
+            border-radius: 5%;
+            margin-left: 6%;
+
+        }
+
+        .prev-btn,
+        .next-btn {
+
+            width: 5%;
+            height: auto;
+
+        }
+
+        .slider-dot {
+            width: $fontsize06-responsive;
+            height: $fontsize06-responsive;
+        }
+    }
+
+    //Music Player
+    .music-player {
+        margin-left: 3%;
+        width: 27.0rem;
+
+        .album-art {
+            img {
+                width: 3.5rem;
+                height: 3.5rem;
+
+            }
+        }
+
+        .song-info {
+
+            margin-left: 3%;
+
+            h2 {
+
+
+
+                font-size: $fontsize06;
+
+                width: 8.5rem;
+            }
+
+            p {
+                /* gtav */
+
+
+
+                font-size: $fontsize06;
+
+
+                width: 8.5rem;
+
+                height: auto;
+
+
+
+            }
+        }
+
+        .center-control {
+
+            width: 5.2rem;
+            height: 1.0rem;
+
+
+
+
+
+        }
+
+       
+        .controls {
+           
+            margin: 0.8rem 0;
+
+
+            width: 1.3rem;
+            height: 1.3rem;
+
+
+
+            .back,
+            .forward, .pause,
+            .play {
+
+                width: 1.8rem;
+                height: 1.8rem;
+
+              
+
+            }
+
+
+        }
+
+        #current-time,
+        #duration {
+
+
+            width: 1.0rem;
+            height: 1.0rem;
+
+
+            font-size: $fontsize06-responsive;
+           
+
+
+        }
+
+
+        .progress-container,
+        .volume-container {
+
+          
+            width: 10.0rem;
+            height: 1.3rem;
+
+
+
+
+            span {
+                margin: 0 0.5rem;
+            }
+
+
+
+            // /* Genel range stilini sıfırlayalım */
+            input[type="range"] {
+               
+                width: 100%;
+                height: 0.15rem;
+               
+
+
+
+            }
+
+            
+
+
+
+
+        }
+
+        .volume-container {
+            /* Voulme */
+
+            width: 4.0rem;
+            height: 0.9rem;
+
+            margin-left: 5%;
+
+            img {
+                padding-top: 5%;
+            }
+
+        }
+    }
+
+
+}
+
+
+@media (min-width:1280px) {
+    //Header
+
+    .header {
+        height: 9%;
+
+        svg {
+            height: 90%;
+        }
+
+        h1,
+        p {
+            font-size: $fontsize;
+        }
+    }
+
+    // Welcome
+    .card {
+        height: 45%;
+        width: 30%;
+        
+        .card-image {
+            width: 98%;
+            height: auto;
+
+
+        }
+
+
+        .card-content {
+
+            width: 90%;
+        }
+
+        .card-title {
+
+
+            margin-top: -5%;
+            
+
+            font-size: $fontsize06-responsive;
+
+
+
+
+
+        }
+
+        .card-description {
+
+            font-size: $fontsize06-responsive;
+            line-height: 0.8rem;
+
+
+
+
+        }
+    }
+
+    // Gallery
+    .gallery-content {
+
+        width: 30%;
+
+        height: 35%;
+
+
+        .gallery-top {
+
+            svg {
+
+                width: 1.2rem;
+                height: auto;
+
+
+            }
+
+            h3 {
+
+
+                font-size: $fontsize08-responsive;
+
+
+
+
+            }
+
+            p {
+
+
+
+                font-size: 0.4rem;
+
+
+
+
+
+            }
+        }
+
+        .slides img {
+            width: 80%;
+            padding-left: 2%;
+            padding-right: 3%;
+            border-radius: 5%;
+            margin-left: 5%;
+
+        }
+
+        .prev-btn,
+        .next-btn {
+
+            width: 5%;
+            height: auto;
+
+        }
+
+        .slider-dot {
+            width: $fontsize06-responsive;
+            height: $fontsize06-responsive;
+        }
+    }
+
+    //Music Player
+    .music-player {
+        margin-left: 8%;
+        width: 40.0rem;
+        height: 4.3rem;
+
+        .album-art {
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
+
+            }
+        }
+
+        .song-info {
+
+            margin-left: 3%;
+
+            h2 {
+
+
+
+                font-size: $fontsize06;
+
+                width: 12.5rem;
+            }
+
+            p {
+                /* gtav */
+
+
+
+                font-size: $fontsize06;
+
+
+                width: 12.5rem;
+
+                height: auto;
+
+
+
+            }
+        }
+
+        .center-control {
+
+            width: 8.2rem;
+            height: 2.0rem;
+
+
+
+
+
+        }
+
+       
+        .controls {
+           
+            margin: 0.8rem 0;
+
+
+            width: 5.3rem;
+            height: 5.3rem;
+
+
+
+            .back,
+            .forward, .pause,
+            .play {
+
+                width: 1.5rem;
+                height: 1.5rem;
+
+              
+
+            }
+
+
+        }
+
+        #current-time,
+        #duration {
+
+
+            width: 1.5rem;
+            height: 1.5rem;
+
+
+            font-size: $fontsize06-responsive;
+           
+
+
+        }
+
+
+        .progress-container,
+        .volume-container {
+
+          
+            width: 15.0rem;
+            height: 1.3rem;
+
+
+
+
+            span {
+                margin: 0 0.5rem;
+            }
+
+
+
+            // /* Genel range stilini sıfırlayalım */
+            input[type="range"] {
+               
+                width: 100%;
+                height: 0.15rem;
+               
+
+
+
+            }
+
+            
+
+
+
+
+        }
+
+        .volume-container {
+            /* Voulme */
+
+            width: 8.0rem;
+            height: 1.5rem;
+
+            margin-left: 5%;
+
+            img {
+                padding-top: 5%;
+            }
+
+        }
+    }
+
+    //Social Media
+    .social-media {
+
+        width: 20.0rem;
+        //  height: 4.5rem;
+    
+        width: $social-min-width-responsive;
+        height: $social-min-height-responsive;
+        
+    
+        p {
+    
+    
+           
+            font-size: $fontsize06-responsive;
+           
+            width: 12.3rem;
+           
+           
+    
+        }
+    
+    
+    
+        li {
+           
+            img {
+    
+    
+    
+                width: 1.3rem;
+                height: 1.3rem;
+               
+        
+        
+        
+            }
+        
+           
+        }
+        
+         
+    
+       
+       
+    }
+
+}
+
+
+@media (min-width:1920px) {
+    //Header
+
+    .header {
+        height: 8%;
+
+        svg {
+            height: 100%;
+        }
+
+        h1,
+        p {
+            font-size: $fontsize;
+        }
+    }
+
+    // Welcome
+    .card {
+        height: 45%;
+        width: 30%;
+        
+        .card-image {
+            width: 98%;
+            height: auto;
+
+
+        }
+
+
+        .card-content {
+
+            width: 90%;
+        }
+
+        .card-title {
+
+
+            
+
+            font-size: $fontsize;
+
+
+
+
+
+        }
+
+        .card-description {
+
+            font-size: $fontsize08;
+            line-height: 1.1rem;
+
+
+
+
+        }
+    }
+
+    // Gallery
+    .gallery-content {
+
+        width: 30%;
+
+        height: 35%;
+
+
+        .gallery-top {
+
+            svg {
+
+                width: 2.0rem;
+                height: auto;
+
+
+            }
+
+            h3 {
+
+
+                font-size: $fontsize08;
+
+
+
+
+            }
+
+            p {
+
+
+
+                font-size: 0.6rem;
+
+
+
+
+
+            }
+        }
+
+        .slides img {
+            width: 85%;
+            padding-left: 3%;
+            padding-right: 3%;
+            border-radius: 5%;
+            margin-left: 3.1%;
+
+        }
+
+        .prev-btn,
+        .next-btn {
+
+            width: 5%;
+            height: auto;
+
+        }
+
+        .slider-dot {
+            width: $fontsize06;
+            height: $fontsize06;
+        }
+    }
+
+    //Music Player
+    .music-player {
+        margin-left: 8%;
+        width: 50.0rem;
+        height: 4.3rem;
+
+        .album-art {
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
+
+            }
+        }
+
+        .song-info {
+
+            margin-left: 3%;
+
+            h2 {
+
+
+
+                font-size: $fontsize06;
+
+                width: 12.5rem;
+            }
+
+            p {
+                /* gtav */
+
+
+
+                font-size: $fontsize06;
+
+
+                width: 12.5rem;
+
+                height: auto;
+
+
+
+            }
+        }
+
+        .center-control {
+
+            width: 14.2rem;
+            height: 2.0rem;
+
+
+
+
+
+        }
+
+       
+        .controls {
+           
+            margin: 0.8rem 0;
+
+
+            width: 5.3rem;
+            height: 5.3rem;
+
+
+
+            .back,
+            .forward, .pause,
+            .play {
+
+                width: 1.5rem;
+                height: 1.5rem;
+
+              
+
+            }
+
+
+        }
+
+        #current-time,
+        #duration {
+
+
+            width: 1.5rem;
+            height: 1.5rem;
+
+
+            font-size: $fontsize06-responsive;
+           
+
+
+        }
+
+
+        .progress-container,
+        .volume-container {
+
+          
+            width: 15.0rem;
+            height: 1.3rem;
+
+
+
+
+            span {
+                margin: 0 0.5rem;
+            }
+
+
+
+            // /* Genel range stilini sıfırlayalım */
+            input[type="range"] {
+               
+                width: 100%;
+                height: 0.15rem;
+               
+
+
+
+            }
+
+            
+
+
+
+
+        }
+
+        .volume-container {
+            /* Voulme */
+
+            width: 8.0rem;
+            height: 1.5rem;
+
+            margin-left: 5%;
+
+            img {
+                padding-top: 5%;
+            }
+
+        }
+    }
+
+    //Social Media
+    .social-media {
+
+        width: 30.0rem;
+        //  height: 4.5rem;
+    
+   
+    
+        p {
+    
+    
+           
+            font-size: $fontsize06-responsive+0.2;
+           
+            width: 12.3rem;
+           
+           
+    
+        }
+    
+    
+    
+        li {
+           
+            img {
+    
+    
+    
+                width: 1.8rem;
+                height: 1.8rem;
+               
+        
+        
+        
+            }
+        
+           
+        }
+        
+         
+    
+       
+       
+    }
+
+}
+
+@media (min-width:2560px) {
+    //Header
+
+    .header {
+        height: 10%;
+
+        svg {
+            height: 110%;
+        }
+
+        h1,
+        p {
+            font-size: $fontsize+1.0;
+        }
+    }
+
+    // Welcome
+    .card {
+        height: 45%;
+        width: 30%;
+        
+        .card-image {
+            width: 98%;
+            height: auto;
+
+
+        }
+
+
+        .card-content {
+
+            width: 90%;
+        }
+
+        .card-title {
+
+
+            font-size: $fontsize06-responsive+1.0;
+
+
+
+
+
+        }
+
+        .card-description {
+
+            font-size: $fontsize06-responsive+0.5;
+            line-height: 1.5rem;
+
+
+
+
+        }
+    }
+
+    // Gallery
+    .gallery-content {
+
+        width: 30%;
+
+        height: 35%;
+
+
+        .gallery-top {
+            line-height: 0.8rem;
+
+
+            
+            svg {
+
+                width: 1.2rem+1.0;
+                height: auto;
+
+
+            }
+
+            h3 {
+
+
+                font-size: $fontsize08-responsive+0.3;
+               
+
+            }
+
+            p {
+
+
+
+                font-size: 0.6rem+0.3;
+
+
+
+
+
+            }
+        }
+
+        .slides img {
+            width: 90%;
+            padding-left: 3%;
+            padding-right: 4%;
+            border-radius: 5%;
+            margin-left: 3%;
+
+        }
+
+        .prev-btn,
+        .next-btn {
+
+            width: 5%;
+            height: auto;
+
+        }
+
+        .slider-dot {
+            width: $fontsize06-responsive+0.3;
+            height: $fontsize06-responsive+0.3;
+        }
+    }
+
+    //Music Player
+    .music-player {
+        margin-left: 5%;
+        width: 70.0rem;
+        height: 5.3rem;
+
+        .album-art {
+            img {
+                width: 3.5rem;
+                height: 3.5rem;
+
+            }
+        }
+
+        .song-info {
+
+            margin-left: 3%;
+
+            h2 {
+
+
+
+                font-size: $fontsize06+0.3;
+
+                width: 12.5rem;
+            }
+
+            p {
+                /* gtav */
+
+
+
+                font-size: $fontsize06+0.3;
+
+
+                width: 12.5rem;
+
+                height: auto;
+
+
+
+            }
+        }
+
+        .center-control {
+
+            width: 20.2rem;
+            height: 2.0rem;
+
+
+
+
+
+        }
+
+       
+        .controls {
+           
+            margin: 0.8rem 0;
+
+
+            width: 7.3rem;
+            height: 7.3rem;
+
+
+
+            .back,
+            .forward, .pause,
+            .play {
+
+                width: 2.3rem;
+                height: 2.3rem;
+
+              
+
+            }
+
+
+        }
+
+        #current-time,
+        #duration {
+
+
+            width: 2.3rem;
+            height: 2.3rem;
+
+
+            font-size: $fontsize06-responsive+0.3;
+           
+
+
+        }
+
+
+        .progress-container,
+        .volume-container {
+
+          
+            width: 17.0rem;
+            height: 1.3rem;
+
+
+
+
+            span {
+                margin: 0 0.5rem;
+            }
+
+
+
+            // /* Genel range stilini sıfırlayalım */
+            input[type="range"] {
+               
+                width: 100%;
+                height: 0.15rem;
+               
+
+
+
+            }
+
+            
+
+
+
+
+        }
+
+        .volume-container {
+            /* Voulme */
+
+            width: 11.0rem;
+            height: 5.3rem;
+
+            margin-left: 5%;
+
+            img {
+                padding-top: 5%;
+            }
+
+        }
+    }
+
+     //Social Media
+    .social-media {
+
+        width: 40.0rem;
+         height: 5.0rem;
+    
+      
+    
+        p {
+    
+    
+           
+            font-size: $fontsize06-responsive+0.3;
+           
+            width: 13.3rem;
+           
+           
+    
+        }
+    
+    
+    
+        li {
+           
+            img {
+    
+    
+    
+                width: 2.3rem;
+                height: 2.3rem;
+               
+        
+        
+        
+            }
+        
+           
+        }
+        
+         
+    
+       
+       
+    }
+
+}

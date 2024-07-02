@@ -1,0 +1,87 @@
+// Sağ altta bulunan sosyal medya butonları için
+
+.social-media {
+
+    width: 20.0rem;
+    //  height: 4.5rem;
+
+    width: $social-min-width;
+    height: $social-min-height;
+    // background-color: rgb(61, 128, 187);
+
+     background: linear-gradient(122.72deg, rgba(32, 32, 32, 0.1) 1.74%, rgba(19, 19, 19, 0.1) 1.75%, rgba(255, 255, 255, 0.1) 29.41%, rgba(0, 0, 0, 0.1) 97.16%);
+    backdrop-filter: blur(5px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px;
+
+    margin-left: 3%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+
+    p {
+
+
+        font-style: normal;
+        font-weight: 450;
+        font-size: $fontsize06;
+        line-height: 13px;
+
+        color: $text-color;
+
+        width: 12.3rem;
+        text-align: center;
+        // height: 59px;
+
+        span {
+            color: $primary-color;
+            
+            &:hover {
+                scale: 0.95;
+                transition: all 0.6s ease-out;
+                filter: drop-shadow(0px 0.5px 0.5px $primary-color);
+                cursor: pointer;
+              }
+        }
+
+    }
+
+
+
+    li {
+        display: inline;
+        margin: $fontsize06;
+
+        img {
+
+
+
+            width: 35px;
+            height: 35px;
+            background-color: #ffffff52;
+            border-radius: 7px;
+
+            padding: 2%;
+    
+            &:hover {
+                scale: 1.1;
+                transition: all 0.8s ease-out;
+                filter: drop-shadow(0px 0.5px 0.5px $light-color);
+              }
+    
+    
+    
+        }
+    
+       
+    }
+    
+     
+
+   
+   
+}

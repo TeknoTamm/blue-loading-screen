@@ -1,0 +1,280 @@
+// orta aşağıda bulunan müzik oynatıcısı için
+
+.bottom-box {
+  display: flex;
+  flex-direction: row;
+
+
+
+  margin-left: 30%;
+  position: absolute;
+  bottom: 4.3%;
+
+  box-sizing: border-box;
+
+  height: 4.5rem;
+
+
+}
+
+
+
+
+
+.music-player {
+  background: linear-gradient(122.72deg, rgba(32, 32, 32, 0.1) 1.74%, rgba(19, 19, 19, 0.1) 1.75%, rgba(255, 255, 255, 0.1) 29.41%, rgba(0, 0, 0, 0.1) 97.16%);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 10px;
+  width: $player-min-width;
+  height: $player-min-height;
+
+  border-radius: 10px;
+
+  color: $text-color;
+
+  display: flex;
+  align-items: center;
+
+  /* Music */
+
+  width: 45.0rem;
+  // height: 4.5rem;
+
+
+
+  .album-art {
+    img {
+      width: 3.0rem;
+      height: 3.0rem;
+      border-radius: 0.4rem;
+      // box-shadow: 0 0 15px #000; // Default shadow
+      filter: drop-shadow(0px 0px 10.5px rgba(255, 255, 255, 0.288));
+    }
+  }
+
+  .song-info {
+    margin-left: 3%;
+
+    h2 {
+
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+
+      color: $text-color;
+
+      height: auto;
+      width: 10.5rem;
+    }
+
+    p {
+      /* gtav */
+
+
+      font-style: normal;
+      font-weight: 300;
+      font-size: 11.9634px;
+      line-height: 15px;
+      margin-top: 5%;
+
+      width: 10.5rem;
+
+      height: auto;
+
+      color: $text-color;
+
+
+    }
+  }
+
+  .center-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 15.2rem;
+    height: 5.0rem;
+
+
+
+
+
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.0rem 0;
+
+
+    width: 3.3rem;
+    height: 1.55rem;
+
+
+
+    .back,
+    .forward {
+
+      width: 2.8rem;
+      height: 1.5rem;
+
+      &:hover {
+        scale: 0.95;
+        transition: all 0.6s ease-out;
+        filter: drop-shadow(0px 0.5px 0.5px $text-shadow-color);
+      }
+
+      &:focus {
+        outline: none;
+
+      }
+
+    }
+    .play,
+    .pause {
+        display: none; /* Önce her iki butonu da gizleyelim */
+        width: 1.8rem;
+      height: 1.5rem;
+
+      &:hover {
+        scale: 0.95;
+        transition: all 0.6s ease-out;
+        filter: drop-shadow(0px 0.5px 0.5px $primary-color);
+      }
+
+      &:focus {
+        outline: none;
+
+      }
+    }
+    
+    .play.active,
+    .pause.active {
+        display: inline; /* Aktif olan butonu gösterelim */
+    }
+
+    
+    // .pause,
+    // .play {
+    //   /* Vector */
+
+    //   width: 1.8rem;
+    //   height: 1.5rem;
+
+    //   &:hover {
+    //     scale: 0.95;
+    //     transition: all 0.6s ease-out;
+    //     filter: drop-shadow(0px 0.5px 0.5px $primary-color);
+    //   }
+
+    //   &:focus {
+    //     outline: none;
+
+    //   }
+    // }
+
+  }
+
+  #current-time,
+  #duration {
+
+
+    width: 1.0rem;
+    height: 1.0rem;
+
+
+    font-weight: 400;
+    font-size: $fontsize06;
+    line-height: 11px;
+
+    color: $text-color;
+
+    margin-top: 3%;
+
+
+  }
+
+
+  .progress-container,
+  .volume-container {
+
+    display: flex;
+    align-items: center;
+
+
+    width: 15.0rem;
+    height: 1.3rem;
+
+
+
+
+    span {
+      margin: 0 0.5rem;
+    }
+
+
+
+    // /* Genel range stilini sıfırlayalım */
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 0.15rem;
+      background-color: $medium-dark-color;
+      outline: none;
+      opacity: 0.7;
+      transition: opacity .2s;
+
+      border-radius: 5.0rem;
+
+
+
+    }
+
+    input[type="range"]:hover {
+      opacity: 0.75;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      background: $primary-color;
+      box-sizing: border-box;
+      border: 0.2rem solid $medium-dark-color;
+      border-radius: 50%;
+
+
+      &:focus-visible {
+        box-shadow: 0 0 0 6px $medium-dark-color;
+      }
+
+      cursor: pointer;
+    }
+
+
+
+
+
+  }
+
+  .volume-container {
+    /* Voulme */
+
+    width: 8.0rem;
+    height: 1.5rem;
+
+    margin-left: 5%;
+
+    img {
+      padding-top: 5%;
+    }
+
+  }
+
+}

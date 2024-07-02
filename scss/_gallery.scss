@@ -1,0 +1,183 @@
+// Sol alt tarafta bulunan galeri için
+
+.gallery-content {
+
+    display: flex;
+  
+    margin-top: 2%;
+    margin-left: 1.5%;
+    width: $gallery-min-width;
+    height: $gallery-min-height;
+
+    background: linear-gradient(122.72deg, rgba(79, 79, 79, 0.1) 1.74%, rgba(79, 79, 79, 0.1) 1.75%, rgba(255, 255, 255, 0.1) 33.05%, rgba(79, 79, 79, 0.1) 97.16%);
+    backdrop-filter: blur(35px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 16px;
+    flex-direction: column;
+
+
+}
+
+.gallery {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 3%;
+ 
+}
+
+
+.gallery-content .gallery-top {
+    display: flex;
+    flex-direction: row;
+
+    padding: 3%;
+
+}
+
+.gallery-top svg {
+
+    width: 2.2rem;
+    height: auto;
+
+
+}
+.gallery-top div{ 
+    margin-left: 2%;
+}
+
+.gallery-top h3 {
+
+
+    font-style: normal;
+    font-weight:700;
+    font-size: $fontsize08;
+    line-height: 1.0rem;
+  
+
+    color: $text-color;
+
+
+
+}
+
+.gallery-top p {
+
+   
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+ 
+
+    color: $text-color;
+
+
+
+}
+
+.slides {
+
+    display: flex;
+    flex-direction: row;
+    transition: transform 1.0s ease-in-out;
+    /* Geçiş efekti eklendi */
+}
+
+.slides img {
+    width: 100%;
+    /* Her bir resim galeri genişliğinin tamamını kaplayacak */
+    cursor: pointer;
+    // padding: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 5%;
+    margin-left: 4%;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    // background-color: rgba(0, 0, 0, 0.5);
+    color: $text-color;
+    border: none;
+    // padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    width: 6%;
+    height: auto;
+}
+
+.prev-btn {
+    left: 10%;
+}
+
+.next-btn {
+    right: 10%;
+    transform: rotate(180deg);
+    top: 86%;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.slider-dot {
+    width: $fontsize06;
+    height: $fontsize06;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    margin: 0 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.slider-dot.active {
+    background-color: $text-color;
+    transform: scale(1.2);
+}
+
+.slider-dot.previous,
+.slider-dot.next {
+    opacity: 0.5;
+}
+
+.fullscreen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $medium-dark-color;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.fullscreen-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: $fontsize08;
+
+}
+
+.close-btn {
+    position: absolute;
+    top:  $fontsize08;
+    right: $fontsize08;
+    background-color: $medium-dark-color;
+    color: $text-color;
+    border: none;
+    padding: 1.0rem;
+    cursor: pointer;
+    border-radius: $fontsize08;
+
+}

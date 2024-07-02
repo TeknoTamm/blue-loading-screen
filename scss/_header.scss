@@ -1,0 +1,66 @@
+// en üstteki logo ve metin alanını kapsayan header için
+
+.header {
+
+    height: 10%;
+
+    display: flex;
+    align-items: flex-start;
+    // justify-content: space-between;
+
+flex: 1;
+    padding-left: 2%;
+    width: 100%;
+
+
+    padding-bottom: 1.0%;
+    padding-top: 1.0%;
+
+    letter-spacing: 0.2rem;
+
+    border-radius: 0.2rem;
+    border-bottom: 0.2rem solid transparent;
+    border-image: linear-gradient(0.25turn, #ffffff, #ffffff, #ffffff30, #ffffff30, #ffffff30);
+    border-image-slice: 1;
+
+}
+
+.header svg {
+    margin-right: 1%;
+}
+
+.header h1 {
+
+    text-shadow: 0 0 50px $text-shadow-color;
+    
+
+    font-size: $fontsize2;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $text-color;
+
+
+}
+
+.header p {
+
+
+    font-size: $fontsize;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $text-color;
+    padding-top: 1%;
+}
+
+
+// header img {
+//     margin-left: auto; /* Bu öğeyi sağa sabitler */
+// } 

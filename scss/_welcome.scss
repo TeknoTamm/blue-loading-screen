@@ -1,0 +1,67 @@
+//sol tarafta bvulunan giriş metni için
+
+.card {
+
+    display: flex;
+
+    flex-direction: column;
+ 
+    margin-top: 2%;
+margin-left: 1.5%;
+    width: $welcome-min-width;
+    height: $welcome-min-height;
+
+    background: linear-gradient(122.72deg, rgba(79, 79, 79, 0.1) 1.74%, rgba(79, 79, 79, 0.1) 1.75%, rgba(255, 255, 255, 0.1) 33.05%, rgba(79, 79, 79, 0.1) 97.16%);
+    backdrop-filter: blur(35px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 16px;
+
+}
+
+.card-image {
+    width: 98%;
+    height: auto;
+    padding-top: 5%;
+    padding-left: 2.5%;
+    // padding-right: 0.5%;
+ 
+}
+
+.card-content {
+    padding-top: 7%;
+    padding-left: 5%;
+    width: $welcome-card-content-min-width;
+}
+
+.card-title {
+    color: $text-color;
+
+ 
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    /* identical to box height */
+  
+
+
+
+
+
+}
+
+.card-description {
+    color: $text-color;
+
+
+    font-style: normal;
+    font-weight: 200;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding-top: 3%;
+
+
+
+
+}
